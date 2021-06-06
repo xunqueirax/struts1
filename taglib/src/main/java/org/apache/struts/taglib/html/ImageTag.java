@@ -20,7 +20,6 @@
  */
 package org.apache.struts.taglib.html;
 
-import org.apache.struts.Globals;
 import org.apache.struts.config.ModuleConfig;
 import org.apache.struts.taglib.TagUtils;
 import org.apache.struts.util.ModuleUtils;

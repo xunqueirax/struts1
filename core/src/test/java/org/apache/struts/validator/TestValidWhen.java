@@ -31,7 +31,6 @@ import org.apache.struts.validator.validwhen.ValidWhenLexer;
 import org.apache.struts.validator.validwhen.ValidWhenParser;
 
 import java.io.StringReader;
-import java.math.BigDecimal;
 
 /**
  * Unit tests for the ValidWhen Parser/Lexer.

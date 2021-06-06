@@ -27,8 +27,6 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.mock.TestMockBase;
 
-import java.util.HashMap;
-
 /**
  * <p>
  * Unit tests for <code>org.apache.struts.util.ActionConfigMatcher</code>.

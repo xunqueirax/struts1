@@ -27,7 +27,6 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.util.RequestUtils;
 import org.apache.struts.Globals;
 import org.apache.struts.mock.TestMockBase;
 import org.apache.struts.mock.MockFormBean;
