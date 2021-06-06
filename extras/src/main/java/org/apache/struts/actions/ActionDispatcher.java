@@ -111,7 +111,7 @@ public class ActionDispatcher implements Dispatcher {
     /**
      * Commons Logging instance.
      */
-    protected static Log log = LogFactory.getLog(ActionDispatcher.class);
+    private static final Log LOG = LogFactory.getLog(ActionDispatcher.class);
 
     /**
      * The message resources for this package.
@@ -218,7 +218,7 @@ public class ActionDispatcher implements Dispatcher {
             String message =
                 messages.getMessage("dispatch.recursive", mapping.getPath());
 
-            log.error(message);
+            LOG.error(message);
             throw new ServletException(message);
         }
 
@@ -256,7 +256,7 @@ public class ActionDispatcher implements Dispatcher {
                 messages.getMessage("dispatch.parameter", mapping.getPath(),
                     mapping.getParameter());
 
-            log.error(message);
+            LOG.error(message);
 
             throw new ServletException(message, e);
         }
@@ -329,7 +329,7 @@ public class ActionDispatcher implements Dispatcher {
             String message =
                 messages.getMessage("dispatch.method", mapping.getPath(), name);
 
-            log.error(message, e);
+            LOG.error(message, e);
 
             String userMsg =
                 messages.getMessage("dispatch.method.user", mapping.getPath());
@@ -369,13 +369,13 @@ public class ActionDispatcher implements Dispatcher {
             String message =
                 messages.getMessage("dispatch.return", mapping.getPath(), name);
 
-            log.error(message, e);
+            LOG.error(message, e);
             throw e;
         } catch (IllegalAccessException e) {
             String message =
                 messages.getMessage("dispatch.error", mapping.getPath(), name);
 
-            log.error(message, e);
+            LOG.error(message, e);
             throw e;
         } catch (InvocationTargetException e) {
             // Rethrow the target exception if possible so that the
@@ -389,7 +389,7 @@ public class ActionDispatcher implements Dispatcher {
                     messages.getMessage("dispatch.error", mapping.getPath(),
                         name);
 
-                log.error(message, e);
+                LOG.error(message, e);
                 throw new ServletException(t);
             }
         }
@@ -451,7 +451,7 @@ public class ActionDispatcher implements Dispatcher {
             String message =
                 messages.getMessage("dispatch.handler", mapping.getPath());
 
-            log.error(message);
+            LOG.error(message);
 
             throw new ServletException(message);
         }

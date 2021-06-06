@@ -95,7 +95,7 @@ public abstract class DispatchAction extends BaseAction {
     /**
      * Commons Logging instance.
      */
-    protected static Log log = LogFactory.getLog(DispatchAction.class);
+    private static final Log LOG = LogFactory.getLog(DispatchAction.class);
 
     // ----------------------------------------------------- Instance Variables
 
@@ -162,7 +162,7 @@ public abstract class DispatchAction extends BaseAction {
             String message =
                 messages.getMessage("dispatch.recursive", mapping.getPath());
 
-            log.error(message);
+            LOG.error(message);
             throw new ServletException(message);
         }
 
@@ -192,7 +192,7 @@ public abstract class DispatchAction extends BaseAction {
             messages.getMessage("dispatch.parameter", mapping.getPath(),
                 mapping.getParameter());
 
-        log.error(message);
+        LOG.error(message);
 
         throw new ServletException(message);
     }
@@ -254,7 +254,7 @@ public abstract class DispatchAction extends BaseAction {
             String message =
                 messages.getMessage("dispatch.method", mapping.getPath(), name);
 
-            log.error(message, e);
+            LOG.error(message, e);
 
             String userMsg =
                 messages.getMessage("dispatch.method.user", mapping.getPath());
@@ -273,13 +273,13 @@ public abstract class DispatchAction extends BaseAction {
             String message =
                 messages.getMessage("dispatch.return", mapping.getPath(), name);
 
-            log.error(message, e);
+            LOG.error(message, e);
             throw e;
         } catch (IllegalAccessException e) {
             String message =
                 messages.getMessage("dispatch.error", mapping.getPath(), name);
 
-            log.error(message, e);
+            LOG.error(message, e);
             throw e;
         } catch (InvocationTargetException e) {
             // Rethrow the target exception if possible so that the
@@ -293,7 +293,7 @@ public abstract class DispatchAction extends BaseAction {
                     messages.getMessage("dispatch.error", mapping.getPath(),
                         name);
 
-                log.error(message, e);
+                LOG.error(message, e);
                 throw new ServletException(t);
             }
         }
@@ -323,7 +323,7 @@ public abstract class DispatchAction extends BaseAction {
             String message =
                 messages.getMessage("dispatch.handler", mapping.getPath());
 
-            log.error(message);
+            LOG.error(message);
 
             throw new ServletException(message);
         }

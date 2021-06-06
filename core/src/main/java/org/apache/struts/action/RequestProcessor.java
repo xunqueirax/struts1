@@ -75,7 +75,7 @@ public class RequestProcessor {
     /**
      * <p>Commons Logging instance.</p>
      */
-    protected static Log log = LogFactory.getLog(RequestProcessor.class);
+    private static final Log LOG = LogFactory.getLog(RequestProcessor.class);
 
     // ----------------------------------------------------- Instance Variables
 
@@ -157,8 +157,8 @@ public class RequestProcessor {
             return;
         }
 
-        if (log.isDebugEnabled()) {
-            log.debug("Processing a '" + request.getMethod() + "' for path '"
+        if (LOG.isDebugEnabled()) {
+            LOG.debug("Processing a '" + request.getMethod() + "' for path '"
                 + path + "'");
         }
 
@@ -251,8 +251,8 @@ public class RequestProcessor {
         // Acquire the Action instance we will be using (if there is one)
         String className = mapping.getType();
 
-        if (log.isDebugEnabled()) {
-            log.debug(" Looking for Action instance for class " + className);
+        if (LOG.isDebugEnabled()) {
+            LOG.debug(" Looking for Action instance for class " + className);
         }
 
         // If there were a mapping property indicating whether
@@ -265,16 +265,16 @@ public class RequestProcessor {
             instance = (Action) actions.get(className);
 
             if (instance != null) {
-                if (log.isTraceEnabled()) {
-                    log.trace("  Returning existing Action instance");
+                if (LOG.isTraceEnabled()) {
+                    LOG.trace("  Returning existing Action instance");
                 }
 
                 return (instance);
             }
 
             // Create and return a new Action instance
-            if (log.isTraceEnabled()) {
-                log.trace("  Creating new Action instance");
+            if (LOG.isTraceEnabled()) {
+                LOG.trace("  Creating new Action instance");
             }
 
             try {
@@ -283,7 +283,7 @@ public class RequestProcessor {
                 // Maybe we should propagate this exception
                 // instead of returning null.
             } catch (Exception e) {
-                log.error(getInternal().getMessage("actionCreate",
+                LOG.error(getInternal().getMessage("actionCreate",
                         mapping.getPath(), mapping.toString()), e);
 
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,
@@ -325,8 +325,8 @@ public class RequestProcessor {
         }
 
         // Store the new instance in the appropriate scope
-        if (log.isDebugEnabled()) {
-            log.debug(" Storing ActionForm bean instance in scope '"
+        if (LOG.isDebugEnabled()) {
+            LOG.debug(" Storing ActionForm bean instance in scope '"
                 + mapping.getScope() + "' under attribute key '"
                 + mapping.getAttribute() + "'");
         }
@@ -360,8 +360,8 @@ public class RequestProcessor {
             return;
         }
 
-        if (log.isDebugEnabled()) {
-            log.debug("processForwardConfig(" + forward + ")");
+        if (LOG.isDebugEnabled()) {
+            LOG.debug("processForwardConfig(" + forward + ")");
         }
 
         String forwardPath = forward.getPath();
@@ -509,7 +509,7 @@ public class RequestProcessor {
         ExceptionConfig config = mapping.findException(exception.getClass());
 
         if (config == null) {
-            log.warn(getInternal().getMessage("unhandledException",
+            LOG.warn(getInternal().getMessage("unhandledException",
                     exception.getClass()));
 
             if (exception instanceof IOException) {
@@ -629,8 +629,8 @@ public class RequestProcessor {
         Locale locale = request.getLocale();
 
         if (locale != null) {
-            if (log.isDebugEnabled()) {
-                log.debug(" Setting user locale '" + locale + "'");
+            if (LOG.isDebugEnabled()) {
+                LOG.debug(" Setting user locale '" + locale + "'");
             }
 
             session.setAttribute(Globals.LOCALE_KEY, locale);
@@ -678,7 +678,7 @@ public class RequestProcessor {
         // No mapping can be found to process this request
         String msg = getInternal().getMessage("processInvalid");
 
-        log.error(msg + " " + path);
+        LOG.error(msg + " " + path);
         response.sendError(HttpServletResponse.SC_NOT_FOUND, msg);
 
         return null;
@@ -769,7 +769,7 @@ public class RequestProcessor {
         if (!path.startsWith(prefix)) {
             String msg = getInternal().getMessage("processPath");
 
-            log.error(msg + " " + request.getRequestURI());
+            LOG.error(msg + " " + request.getRequestURI());
             response.sendError(HttpServletResponse.SC_BAD_REQUEST, msg);
 
             return null;
@@ -808,8 +808,8 @@ public class RequestProcessor {
         }
 
         // Populate the bean properties of this ActionForm instance
-        if (log.isDebugEnabled()) {
-            log.debug(" Populating bean properties from this request");
+        if (LOG.isDebugEnabled()) {
+            LOG.debug(" Populating bean properties from this request");
         }
 
         form.setServlet(this.servlet);
@@ -873,8 +873,8 @@ public class RequestProcessor {
         // Check the current user against the list of required roles
         for (int i = 0; i < roles.length; i++) {
             if (request.isUserInRole(roles[i])) {
-                if (log.isDebugEnabled()) {
-                    log.debug(" User '" + request.getRemoteUser()
+                if (LOG.isDebugEnabled()) {
+                    LOG.debug(" User '" + request.getRemoteUser()
                         + "' has role '" + roles[i] + "', granting access");
                 }
 
@@ -883,8 +883,8 @@ public class RequestProcessor {
         }
 
         // The current user is not authorized for this action
-        if (log.isDebugEnabled()) {
-            log.debug(" User '" + request.getRemoteUser()
+        if (LOG.isDebugEnabled()) {
+            LOG.debug(" User '" + request.getRemoteUser()
                 + "' does not have any required role, denying access");
         }
 
@@ -932,8 +932,8 @@ public class RequestProcessor {
         // error or a spoof.
         if (request.getAttribute(Globals.CANCEL_KEY) != null) {
             if (mapping.getCancellable()) {
-                if (log.isDebugEnabled()) {
-                    log.debug(" Cancelled transaction, skipping validation");
+                if (LOG.isDebugEnabled()) {
+                    LOG.debug(" Cancelled transaction, skipping validation");
                 }
                 return (true);
             } else {
@@ -943,15 +943,15 @@ public class RequestProcessor {
         }
 
         // Call the form bean's validation method
-        if (log.isDebugEnabled()) {
-            log.debug(" Validating input form properties");
+        if (LOG.isDebugEnabled()) {
+            LOG.debug(" Validating input form properties");
         }
 
         ActionMessages errors = form.validate(mapping, request);
 
         if ((errors == null) || errors.isEmpty()) {
-            if (log.isTraceEnabled()) {
-                log.trace("  No errors detected, accepting input");
+            if (LOG.isTraceEnabled()) {
+                LOG.trace("  No errors detected, accepting input");
             }
 
             return (true);
@@ -959,8 +959,8 @@ public class RequestProcessor {
 
         // Special handling for multipart request
         if (form.getMultipartRequestHandler() != null) {
-            if (log.isTraceEnabled()) {
-                log.trace("  Rolling back multipart request");
+            if (LOG.isTraceEnabled()) {
+                LOG.trace("  Rolling back multipart request");
             }
 
             form.getMultipartRequestHandler().rollback();
@@ -970,8 +970,8 @@ public class RequestProcessor {
         String input = mapping.getInput();
 
         if (input == null) {
-            if (log.isTraceEnabled()) {
-                log.trace("  Validation failed but no input form available");
+            if (LOG.isTraceEnabled()) {
+                LOG.trace("  Validation failed but no input form available");
             }
 
             response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,
@@ -981,8 +981,8 @@ public class RequestProcessor {
         }
 
         // Save our error messages and return to the input form if possible
-        if (log.isDebugEnabled()) {
-            log.debug(" Validation failed, returning to '" + input + "'");
+        if (LOG.isDebugEnabled()) {
+            LOG.debug(" Validation failed, returning to '" + input + "'");
         }
 
         request.setAttribute(Globals.ERROR_KEY, errors);
@@ -1020,8 +1020,8 @@ public class RequestProcessor {
 
         // Delegate the processing of this request
         // :FIXME: - exception handling?
-        if (log.isDebugEnabled()) {
-            log.debug(" Delegating via forward to '" + uri + "'");
+        if (LOG.isDebugEnabled()) {
+            LOG.debug(" Delegating via forward to '" + uri + "'");
         }
 
         doForward(uri, request, response);
@@ -1049,8 +1049,8 @@ public class RequestProcessor {
 
         // Delegate the processing of this request
         // FIXME - exception handling?
-        if (log.isDebugEnabled()) {
-            log.debug(" Delegating via include to '" + uri + "'");
+        if (LOG.isDebugEnabled()) {
+            LOG.debug(" Delegating via include to '" + uri + "'");
         }
 
         doInclude(uri, request, response);
