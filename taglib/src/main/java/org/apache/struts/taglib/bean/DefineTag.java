@@ -64,12 +64,6 @@ public class DefineTag extends BodyTagSupport {
     // ------------------------------------------------------------- Properties
 
     /**
-     * The name of the scripting variable that will be exposed as a page scope
-     * attribute.
-     */
-    protected String id = null;
-
-    /**
      * The name of the bean owning the property to be exposed.
      */
     protected String name = null;
@@ -98,14 +92,6 @@ public class DefineTag extends BodyTagSupport {
      * The (String) value to which the defined bean will be set.
      */
     protected String value = null;
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getName() {
         return (this.name);

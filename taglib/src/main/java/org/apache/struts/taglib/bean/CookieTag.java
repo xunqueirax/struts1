@@ -53,12 +53,6 @@ public class CookieTag extends TagSupport {
     // ------------------------------------------------------------- Properties
 
     /**
-     * The name of the scripting variable that will be exposed as a page scope
-     * attribute.
-     */
-    protected String id = null;
-
-    /**
      * Return an array of Cookies if <code>multiple</code> is non-null.
      */
     protected String multiple = null;
@@ -73,14 +67,6 @@ public class CookieTag extends TagSupport {
      * found.
      */
     protected String value = null;
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getMultiple() {
         return (this.multiple);

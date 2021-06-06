@@ -67,11 +67,6 @@ public class MessagesTag extends BodyTagSupport {
     protected boolean processed = false;
 
     /**
-     * The name of the scripting variable to be exposed.
-     */
-    protected String id = null;
-
-    /**
      * The servlet context attribute key for our resources.
      */
     protected String bundle = null;
@@ -119,14 +114,6 @@ public class MessagesTag extends BodyTagSupport {
      * sensitive in HTML? Default is <code>false</code>.
      */
     protected boolean filterArgs = false;
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getBundle() {
         return (this.bundle);

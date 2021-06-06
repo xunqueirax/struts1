@@ -95,11 +95,6 @@ public class IterateTag extends BodyTagSupport {
     protected Object collection = null;
 
     /**
-     * The name of the scripting variable to be exposed.
-     */
-    protected String id = null;
-
-    /**
      * The name of the scripting variable to be exposed as the current index.
      */
     protected String indexId = null;
@@ -140,14 +135,6 @@ public class IterateTag extends BodyTagSupport {
 
     public void setCollection(Object collection) {
         this.collection = collection;
-    }
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     /**

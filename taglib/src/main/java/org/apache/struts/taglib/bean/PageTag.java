@@ -49,23 +49,9 @@ public class PageTag extends TagSupport {
     // ------------------------------------------------------------- Properties
 
     /**
-     * The name of the scripting variable that will be exposed as a page scope
-     * attribute.
-     */
-    protected String id = null;
-
-    /**
      * The name of the page context property to be retrieved.
      */
     protected String property = null;
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getProperty() {
         return (this.property);

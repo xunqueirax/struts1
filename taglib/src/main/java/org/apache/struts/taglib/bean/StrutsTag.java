@@ -50,12 +50,6 @@ public class StrutsTag extends TagSupport {
     // ------------------------------------------------------------- Properties
 
     /**
-     * The name of the scripting variable that will be exposed as a page scope
-     * attribute.
-     */
-    protected String id = null;
-
-    /**
      * The name of the <code>ActionFormBean</code> object to be exposed.
      */
     protected String formBean = null;
@@ -69,14 +63,6 @@ public class StrutsTag extends TagSupport {
      * The name of the <code>ActionMapping</code> object to be exposed.
      */
     protected String mapping = null;
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getFormBean() {
         return (this.formBean);

@@ -58,12 +58,6 @@ public class ResourceTag extends TagSupport {
             "org.apache.struts.taglib.bean.LocalStrings");
 
     /**
-     * The name of the scripting variable that will be exposed as a page scope
-     * attribute.
-     */
-    protected String id = null;
-
-    /**
      * Return an InputStream to the specified resource if this is non-null.
      */
     protected String input = null;
@@ -73,14 +67,6 @@ public class ResourceTag extends TagSupport {
      * exposed.
      */
     protected String name = null;
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getInput() {
         return (this.input);

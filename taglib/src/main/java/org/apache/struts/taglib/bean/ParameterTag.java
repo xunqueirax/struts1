@@ -49,12 +49,6 @@ public class ParameterTag extends TagSupport {
     // ------------------------------------------------------------- Properties
 
     /**
-     * The name of the scripting variable that will be exposed as a page scope
-     * attribute.
-     */
-    protected String id = null;
-
-    /**
      * Return an array of parameter values if <code>multiple</code> is
      * non-null.
      */
@@ -70,14 +64,6 @@ public class ParameterTag extends TagSupport {
      * found.
      */
     protected String value = null;
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getMultiple() {
         return (this.multiple);

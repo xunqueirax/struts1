@@ -86,12 +86,6 @@ public class IncludeTag extends TagSupport {
     protected String href = null;
 
     /**
-     * The name of the scripting variable that will be exposed as a page scope
-     * attribute.
-     */
-    protected String id = null;
-
-    /**
      * The context-relative URI of the page or servlet to be included.
      */
     protected String page = null;
@@ -124,14 +118,6 @@ public class IncludeTag extends TagSupport {
 
     public void setHref(String href) {
         this.href = href;
-    }
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getPage() {

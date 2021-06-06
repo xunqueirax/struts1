@@ -43,7 +43,6 @@ public class NestedWriteNestingTag extends BodyTagSupport {
 	/* the usual private member variables */
     private boolean filter = false;
     private String property = null;
-    private String id = null;
     private String originalProperty = null;
 
     /**
@@ -62,24 +61,6 @@ public class NestedWriteNestingTag extends BodyTagSupport {
      */
     public void setProperty(String newProperty) {
         this.property = newProperty;
-    }
-
-    /**
-     * Getter method for the <i>id</i> property
-     *
-     * @return String value for the id property
-     */
-    public String getId() {
-        return id;
-    }
-
-    /**
-     * Setter method for the <i>id</i> property
-     *
-     * @param id new value for the id property
-     */
-    public void setId(String id) {
-        this.id = id;
     }
 
     /**

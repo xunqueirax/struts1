@@ -60,12 +60,6 @@ public class SizeTag extends TagSupport {
     protected Object collection = null;
 
     /**
-     * The name of the scripting variable that will be exposed as a page scope
-     * attribute.
-     */
-    protected String id = null;
-
-    /**
      * The name of the bean owning the property to be counted.
      */
     protected String name = null;
@@ -86,14 +80,6 @@ public class SizeTag extends TagSupport {
 
     public void setCollection(Object collection) {
         this.collection = collection;
-    }
-
-    public String getId() {
-        return (this.id);
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getName() {

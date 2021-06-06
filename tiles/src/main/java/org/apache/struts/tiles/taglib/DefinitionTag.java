@@ -46,11 +46,6 @@ public class DefinitionTag
 
 	/* JSP Tag attributes */
     /**
-     * Definition identifier.
-     */
-    private String id = null;
-
-    /**
      * Scope into which definition will be saved.
      */
     private String scope = null;
@@ -149,22 +144,6 @@ public class DefinitionTag
 
         // now add attribute to enclosing parent (i.e. : this object).
         putAttribute(nestedTag.getName(), attributeValue);
-    }
-
-    /**
-     * Get the ID.
-     * @return ID
-     */
-    public String getId() {
-        return id;
-    }
-
-    /**
-     * Set the ID.
-     * @param id New ID.
-     */
-    public void setId(String id) {
-        this.id = id;
     }
 
     /**
