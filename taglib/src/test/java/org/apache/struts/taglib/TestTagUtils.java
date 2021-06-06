@@ -221,7 +221,7 @@ public class TestTagUtils extends TagTestBase {
 
     public void testComputeParametersParamValueToString() {
         request.getSession().setAttribute("SomeBean",
-            new MockFormBean(false, false, new Double(1)));
+            new MockFormBean(false, false, Double.valueOf(1)));
 
         Map map = null;
 
@@ -1080,7 +1080,7 @@ public class TestTagUtils extends TagTestBase {
 
         Map map = new HashMap();
 
-        map.put("foo1", new Double(0));
+        map.put("foo1", Double.valueOf(0));
 
         String url = null;
 
@@ -1103,7 +1103,7 @@ public class TestTagUtils extends TagTestBase {
 
         Map map = new HashMap();
 
-        map.put("foo1", new Double(0));
+        map.put("foo1", Double.valueOf(0));
 
         String url = null;
 

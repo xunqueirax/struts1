@@ -224,38 +224,38 @@ joinedExpression : expr join expr {
     Integer join = (Integer) argStack.pop();
     Boolean v2 = (Boolean) argStack.pop();
     if (join.intValue() == AND) {
-        argStack.push(new Boolean(v1.booleanValue() && v2.booleanValue()));
+        argStack.push(Boolean.valueOf(v1.booleanValue() && v2.booleanValue()));
     } else {
-        argStack.push(new Boolean(v1.booleanValue() || v2.booleanValue()));
+        argStack.push(Boolean.valueOf(v1.booleanValue() || v2.booleanValue()));
     }
 };
 
 join : 
     ANDSIGN 
-        { argStack.push(new Integer(AND)); } |
+        { argStack.push(Integer.valueOf(AND)); } |
     ORSIGN 
-        { argStack.push(new Integer(OR)); };
+        { argStack.push(Integer.valueOf(OR)); };
 
 comparison :
     EQUALSIGN 
-        { argStack.push(new Integer(EQUAL)); } |
+        { argStack.push(Integer.valueOf(EQUAL)); } |
     GREATERTHANSIGN 
-        { argStack.push(new Integer(GREATER_THAN)); } |
+        { argStack.push(Integer.valueOf(GREATER_THAN)); } |
     GREATEREQUALSIGN  
-        { argStack.push(new Integer(GREATER_EQUAL)); } |
+        { argStack.push(Integer.valueOf(GREATER_EQUAL)); } |
     LESSTHANSIGN  
-        { argStack.push(new Integer(LESS_THAN)); } |
+        { argStack.push(Integer.valueOf(LESS_THAN)); } |
     LESSEQUALSIGN  
-        { argStack.push(new Integer(LESS_EQUAL)); } |
+        { argStack.push(Integer.valueOf(LESS_EQUAL)); } |
     NOTEQUALSIGN 
-        { argStack.push(new Integer(NOT_EQUAL)); } ;
+        { argStack.push(Integer.valueOf(NOT_EQUAL)); } ;
 
 comparisonExpression : 
     value comparison value {
 	   Object v2 = argStack.pop();
 	   Object comp = argStack.pop();
        Object v1 = argStack.pop();
-       argStack.push(new Boolean(evaluateComparison(v1, comp, v2)));
+       argStack.push(Boolean.valueOf(evaluateComparison(v1, comp, v2)));
     };
 
 class ValidWhenLexer extends Lexer;
