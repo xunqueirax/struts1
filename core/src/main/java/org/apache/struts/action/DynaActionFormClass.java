@@ -46,6 +46,11 @@ public class DynaActionFormClass implements DynaClass, Serializable {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2521119905360425245L;
+
+	/**
      * <p>The <code>DynaActionForm</code> implementation <code>Class</code>
      * which we will use to create new bean instances.</p>
      */

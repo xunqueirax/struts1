@@ -61,6 +61,11 @@ import java.util.StringTokenizer;
  */
 public class JavascriptValidatorTag extends BodyTagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1844396649370462479L;
+
+	/**
      * A Comparator to use when sorting ValidatorAction objects.
      */
     private static final Comparator actionComparator =

@@ -38,6 +38,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELDefinitionTag extends DefinitionTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3868248475601883936L;
+
+	/**
      * Instance variable mapped to "id" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

@@ -38,6 +38,11 @@ import java.util.Map;
  */
 public class LinkTag extends BaseHandlerTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2086640838393670862L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

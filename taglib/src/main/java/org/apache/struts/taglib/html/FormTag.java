@@ -49,6 +49,11 @@ import java.io.IOException;
  */
 public class FormTag extends TagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8974150782496551522L;
+
+	/**
      * The line ending string.
      */
     protected static String lineEnd = System.getProperty("line.separator");

@@ -40,7 +40,12 @@ import java.util.HashMap;
  */
 public class ActionConfig extends BaseConfig {
 
-    private static final Log log = LogFactory.getLog(ActionConfig.class);
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3999561115495765079L;
+
+	private static final Log log = LogFactory.getLog(ActionConfig.class);
 
     // ----------------------------------------------------- Instance Variables
 

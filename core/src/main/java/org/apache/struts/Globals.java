@@ -32,6 +32,11 @@ public class Globals implements Serializable {
     // ----------------------------------------------------- Manifest Constants
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5585920111597892090L;
+
+	/**
      * The context attributes key under which our <code>ActionServlet</code>
      * instance will be stored.
      *

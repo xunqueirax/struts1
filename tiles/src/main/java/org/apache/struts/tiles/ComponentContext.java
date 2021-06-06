@@ -39,6 +39,10 @@ import org.apache.struts.tiles.taglib.ComponentConstants;
 public class ComponentContext implements Serializable {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5887062776582589341L;
+	/**
      * Component attributes.
      */
     private Map attributes=null;

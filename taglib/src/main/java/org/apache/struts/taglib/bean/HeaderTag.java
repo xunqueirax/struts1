@@ -39,6 +39,11 @@ import java.util.Enumeration;
  */
 public class HeaderTag extends TagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1858141385102293698L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

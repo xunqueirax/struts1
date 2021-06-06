@@ -505,6 +505,10 @@ public class CommonsMultipartRequestHandler implements MultipartRequestHandler {
      */
     static class CommonsFormFile implements FormFile, Serializable {
         /**
+		 * 
+		 */
+		private static final long serialVersionUID = -6784594200973351263L;
+		/**
          * <p> The <code>FileItem</code> instance wrapped by this object.
          * </p>
          */

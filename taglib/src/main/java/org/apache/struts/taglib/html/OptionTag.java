@@ -39,6 +39,12 @@ public class OptionTag extends BodyTagSupport {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7578679181809130326L;
+
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

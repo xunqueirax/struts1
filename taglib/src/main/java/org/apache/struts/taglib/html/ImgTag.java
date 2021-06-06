@@ -49,6 +49,11 @@ import java.util.Map;
  */
 public class ImgTag extends BaseHandlerTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1462449704516940123L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

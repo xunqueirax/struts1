@@ -41,6 +41,11 @@ public class EmptyTag extends ConditionalTagBase {
     // ------------------------------------------------------ Protected Methods
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8155134178220490301L;
+
+	/**
      * Evaluate the condition that is being tested by this particular tag, and
      * return <code>true</code> if the nested body content of this tag should
      * be evaluated, or <code>false</code> if it should be skipped. This

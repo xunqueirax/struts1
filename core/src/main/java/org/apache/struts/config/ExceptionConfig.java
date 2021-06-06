@@ -35,6 +35,11 @@ public class ExceptionConfig extends BaseConfig {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6269406361939618377L;
+
+	/**
      * The servlet context attribute under which the message resources bundle
      * to be used for this exception is located.  If not set, the default
      * message resources for the current module is assumed.

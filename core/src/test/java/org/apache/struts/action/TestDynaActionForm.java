@@ -766,7 +766,11 @@ public class TestDynaActionForm extends TestDynaActionFormClass {
 
 
 class DynaActionFormMapping extends ActionMapping {
-    private ModuleConfig appConfig = null;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3732323850297042328L;
+	private ModuleConfig appConfig = null;
 
     public DynaActionFormMapping(ModuleConfig appConfig) {
         this.appConfig = appConfig;
@@ -783,7 +787,11 @@ class DynaActionFormMapping extends ActionMapping {
 
 
 class DynaActionFormConfig extends ModuleConfigImpl {
-    private FormBeanConfig beanConfig = null;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -900294438051733783L;
+	private FormBeanConfig beanConfig = null;
 
     public DynaActionFormConfig(FormBeanConfig beanConfig) {
         super("");

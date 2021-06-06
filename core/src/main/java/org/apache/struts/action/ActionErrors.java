@@ -46,6 +46,11 @@ public class ActionErrors extends ActionMessages implements Serializable {
     // --------------------------------------------------------- Public Methods
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -962678529916763747L;
+
+	/**
      * <p>Create an empty <code>ActionErrors</code> object.</p>
      */
     public ActionErrors() {

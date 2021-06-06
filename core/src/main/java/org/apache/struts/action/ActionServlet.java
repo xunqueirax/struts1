@@ -203,6 +203,11 @@ import java.util.MissingResourceException;
  */
 public class ActionServlet extends HttpServlet {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5339416153175280044L;
+
+	/**
      * <p>Commons Logging instance.</p>
      *
      * @since Struts 1.1

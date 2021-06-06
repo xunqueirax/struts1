@@ -38,6 +38,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELInsertTag extends InsertTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8476945089731861359L;
+
+	/**
      * Instance variable mapped to "template" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

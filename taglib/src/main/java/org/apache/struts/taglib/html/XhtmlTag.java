@@ -37,6 +37,11 @@ import javax.servlet.jsp.tagext.TagSupport;
 public class XhtmlTag extends TagSupport {
     
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2280460329323937654L;
+
+	/**
      * Commons logging instance.
      */
     private static final Log log = LogFactory.getLog(XhtmlTag.class);

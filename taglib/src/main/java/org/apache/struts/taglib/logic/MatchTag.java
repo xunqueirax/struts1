@@ -37,6 +37,11 @@ public class MatchTag extends ConditionalTagBase {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4209300919052098694L;
+
+	/**
      * The location where the match must exist (<code>start</code> or
      * <code>end</code>), or <code>null</code> for anywhere.
      */

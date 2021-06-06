@@ -36,7 +36,11 @@ import javax.servlet.jsp.JspException;
  */
 public class NestedLessEqualTag extends LessEqualTag
     implements NestedNameSupport {
-    /* the usual private member variables */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7912520669255890018L;
+	/* the usual private member variables */
     private String originalName = null;
     private String originalProperty = null;
 

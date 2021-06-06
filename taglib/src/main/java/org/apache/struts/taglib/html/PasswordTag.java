@@ -29,6 +29,11 @@ package org.apache.struts.taglib.html;
  */
 public class PasswordTag extends BaseFieldTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3563367907738706027L;
+
+	/**
      * Construct a new instance of this tag.
      */
     public PasswordTag() {

@@ -36,6 +36,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELSubmitTag extends SubmitTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4912978664672596047L;
+
+	/**
      * Instance variable mapped to "accessKey" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

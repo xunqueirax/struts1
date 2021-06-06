@@ -59,6 +59,11 @@ import org.xml.sax.SAXException;
 public class I18nFactorySet extends FactorySet {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5165509575040839305L;
+
+	/**
      * Commons Logging instance.
      */
     protected static Log log = LogFactory.getLog(I18nFactorySet.class);

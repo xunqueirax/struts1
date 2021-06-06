@@ -46,6 +46,10 @@ public class TestBean extends ActionForm {
 
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8323139488730091727L;
+	/**
      * A collection property where the elements of the collection are of type
      * <code>LabelValueBean</code>.
      */

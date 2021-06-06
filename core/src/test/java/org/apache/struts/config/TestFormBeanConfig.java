@@ -328,7 +328,11 @@ public class TestFormBeanConfig extends TestCase {
      * Used to detect that FormBeanConfig is making the right calls.
      */
     public static class CustomFormBeanConfig extends FormBeanConfig {
-        boolean processExtendsCalled = false;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -1148163983085104532L;
+		boolean processExtendsCalled = false;
 
         public void processExtends(ModuleConfig moduleConfig)
             throws ClassNotFoundException, IllegalAccessException,

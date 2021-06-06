@@ -35,6 +35,11 @@ public class MessageResourcesConfig extends BaseConfig {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8689874577436806101L;
+
+	/**
      * Fully qualified Java class name of the MessageResourcesFactory class we
      * should use.
      */

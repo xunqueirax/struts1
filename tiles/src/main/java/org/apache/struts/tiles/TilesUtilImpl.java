@@ -46,7 +46,12 @@ import org.apache.struts.util.RequestUtils;
  */
 public class TilesUtilImpl implements Serializable {
 
-    /** Commons Logging instance.*/
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4942732841978123351L;
+
+	/** Commons Logging instance.*/
     protected static final Log log = LogFactory.getLog(TilesUtil.class);
 
     /** Constant name used to store factory in servlet context */

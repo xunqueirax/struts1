@@ -47,6 +47,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELFrameTag extends FrameTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8429856951911165120L;
+
+	/**
      * Instance variable mapped to "action" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

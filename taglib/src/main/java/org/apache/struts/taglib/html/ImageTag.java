@@ -38,6 +38,11 @@ public class ImageTag extends SubmitTag {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6895880639102424412L;
+
+	/**
      * The alignment for this image.
      */
     protected String align = null;

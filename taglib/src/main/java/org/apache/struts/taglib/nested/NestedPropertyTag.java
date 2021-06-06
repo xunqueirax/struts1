@@ -43,7 +43,11 @@ import javax.servlet.jsp.tagext.BodyTagSupport;
  */
 public class NestedPropertyTag extends BodyTagSupport
     implements NestedNameSupport {
-    /* the usual private member variable */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1282076933811483467L;
+	/* the usual private member variable */
     private String property = null;
     private String originalNest = null;
     private String originalName = null;

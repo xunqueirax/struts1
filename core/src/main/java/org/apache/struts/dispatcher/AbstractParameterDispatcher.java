@@ -32,6 +32,10 @@ import org.apache.struts.chain.contexts.ActionContext;
 public abstract class AbstractParameterDispatcher extends AbstractDispatcher {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -9048942314641198669L;
+	/**
      * The default parameter name if no parameter is set.
      * 
      * @see #getDefaultParameterName()

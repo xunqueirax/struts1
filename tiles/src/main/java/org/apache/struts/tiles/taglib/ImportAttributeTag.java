@@ -41,6 +41,12 @@ import org.apache.struts.tiles.ComponentContext;
 public class ImportAttributeTag extends TagSupport {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 627331513872580706L;
+
+
+	/**
      * Class name of object.
      */
     private String  name = null;

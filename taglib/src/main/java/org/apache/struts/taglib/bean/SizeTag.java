@@ -41,6 +41,11 @@ import java.util.Map;
  */
 public class SizeTag extends TagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5127140862877418975L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

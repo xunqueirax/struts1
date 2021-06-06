@@ -46,6 +46,11 @@ import java.util.Locale;
  */
 public class WriteTag extends TagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 9063011151700733307L;
+
+	/**
      * The key to search default format string for java.sql.Timestamp in
      * resources.
      */

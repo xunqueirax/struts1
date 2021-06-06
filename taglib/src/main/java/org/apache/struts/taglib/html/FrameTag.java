@@ -47,6 +47,11 @@ public class FrameTag extends LinkTag {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3149862407102709639L;
+
+	/**
      * The frameborder attribute that should be rendered (1, 0).
      */
     protected String frameborder = null;

@@ -37,6 +37,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELPageTag extends PageTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4046270538732978343L;
+
+	/**
      * Instance variable mapped to "id" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

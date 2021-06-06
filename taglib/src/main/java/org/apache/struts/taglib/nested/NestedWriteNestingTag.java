@@ -36,7 +36,11 @@ import javax.servlet.jsp.tagext.BodyTagSupport;
  * @since Struts 1.1
  */
 public class NestedWriteNestingTag extends BodyTagSupport {
-    /* the usual private member variables */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4687194240564186563L;
+	/* the usual private member variables */
     private boolean filter = false;
     private String property = null;
     private String id = null;

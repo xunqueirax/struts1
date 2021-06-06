@@ -29,6 +29,11 @@ package org.apache.struts.taglib.html;
  */
 public class ButtonTag extends SubmitTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7666493902857886285L;
+
+	/**
      * Render the opening element.
      *
      * @return The opening part of the element.

@@ -38,6 +38,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELSelectTag extends SelectTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -558101920824985819L;
+
+	/**
      * Instance variable mapped to "alt" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

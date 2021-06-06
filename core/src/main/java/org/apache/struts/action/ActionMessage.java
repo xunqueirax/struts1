@@ -37,6 +37,11 @@ public class ActionMessage implements Serializable {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5038146636915080725L;
+
+	/**
      * <p>The message key for this message.</p>
      */
     protected String key = null;

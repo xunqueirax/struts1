@@ -31,7 +31,12 @@ import javax.servlet.jsp.JspException;
  *          $
  */
 public class TextareaTag extends BaseInputTag {
-    // ----------------------------------------------------- Constructor
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7022620739760157338L;
+
+	// ----------------------------------------------------- Constructor
     public TextareaTag() {
         super();
         doReadonly = true;

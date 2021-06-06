@@ -58,6 +58,11 @@ public class DynaActionForm extends ActionForm implements DynaBean {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1726775935544475430L;
+
+	/**
      * <p>The <code>DynaActionFormClass</code> with which we are associated.
      * </p>
      */

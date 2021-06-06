@@ -34,7 +34,11 @@ import javax.servlet.jsp.JspException;
  * @since Struts 1.1
  */
 public class NestedMessageTag extends MessageTag implements NestedNameSupport {
-    /* the usual private member variables */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6442069120349626851L;
+	/* the usual private member variables */
     private String originalName = null;
     private String originalProperty = null;
 

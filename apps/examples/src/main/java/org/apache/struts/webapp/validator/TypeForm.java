@@ -36,7 +36,11 @@ import org.apache.struts.validator.ValidatorForm;
  *
 */
 public final class TypeForm extends ValidatorForm implements Serializable {
-    private String action = null;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1904944433046066164L;
+	private String action = null;
     private String name = null;  //Used to test Multiform per page validation when property name is 'name'
     private String sByte = null;
     private String sShort = null;

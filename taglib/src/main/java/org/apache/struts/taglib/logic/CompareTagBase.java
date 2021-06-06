@@ -41,6 +41,11 @@ public abstract class CompareTagBase extends ConditionalTagBase {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 9080377495065975604L;
+
+	/**
      * We will do a double/float comparison.
      */
     protected static final int DOUBLE_COMPARE = 0;

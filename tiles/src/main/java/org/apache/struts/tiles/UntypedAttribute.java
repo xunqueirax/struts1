@@ -27,6 +27,11 @@ package org.apache.struts.tiles;
 public class UntypedAttribute implements AttributeDefinition {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6268589644481252985L;
+
+	/**
      * Role associated to this attribute.
      */
     protected String role = null;

@@ -44,6 +44,11 @@ public class HtmlTag extends TagSupport {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1110615775165419573L;
+
+	/**
      * Commons Logging instance.
      */
     private static Log log = LogFactory.getLog(HtmlTag.class);

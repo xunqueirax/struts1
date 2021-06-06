@@ -60,6 +60,11 @@ public class InsertTag
     implements PutTagParent, ComponentConstants, PutListTagParent {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2766692814063683370L;
+
+	/**
      * The role delimiter.
      * @deprecated This will be removed in a release after Struts 1.2.
      */

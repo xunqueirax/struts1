@@ -37,6 +37,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELSizeTag extends SizeTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6307082912096160194L;
+
+	/**
      * Instance variable mapped to "collection" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

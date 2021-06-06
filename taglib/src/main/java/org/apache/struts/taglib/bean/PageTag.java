@@ -35,6 +35,11 @@ import javax.servlet.jsp.tagext.TagSupport;
  */
 public class PageTag extends TagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2282932037238749018L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

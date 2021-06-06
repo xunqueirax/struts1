@@ -27,7 +27,12 @@ package org.apache.struts.tiles;
  */
 public class DirectStringAttribute extends UntypedAttribute {
 
-    public DirectStringAttribute(String value) {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7113529528664791325L;
+
+	public DirectStringAttribute(String value) {
         super(value);
     }
 

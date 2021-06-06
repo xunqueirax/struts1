@@ -59,6 +59,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELErrorsTag extends ErrorsTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3497234021976060414L;
+
+	/**
      * Instance variable mapped to "bundle" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

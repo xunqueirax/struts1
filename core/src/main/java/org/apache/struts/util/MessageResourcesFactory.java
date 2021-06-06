@@ -49,6 +49,11 @@ public abstract class MessageResourcesFactory implements Serializable {
     // ------------------------------------------------------ Static Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4038049321455270344L;
+
+	/**
      * The Java class to be used for <code>MessageResourcesFactory</code>
      * instances.
      */

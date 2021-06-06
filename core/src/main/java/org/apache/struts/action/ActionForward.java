@@ -65,6 +65,11 @@ import org.apache.struts.config.ForwardConfig;
  */
 public class ActionForward extends ForwardConfig {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7849370054972965028L;
+
+	/**
      * <p>Construct a new instance with default values.</p>
      */
     public ActionForward() {

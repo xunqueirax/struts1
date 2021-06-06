@@ -50,6 +50,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELImgTag extends ImgTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5944629740411400979L;
+
+	/**
      * Instance variable mapped to "action" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

@@ -53,6 +53,11 @@ public class OptionsCollectionTag extends TagSupport {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1914555968585129477L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

@@ -117,7 +117,12 @@ import java.util.Properties;
 public class PropertyMessageResources extends MessageResources {
 
 
-    /** Indicates compatibility with how PropertyMessageResources has always looked up messages */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6110925527101249875L;
+
+	/** Indicates compatibility with how PropertyMessageResources has always looked up messages */
     private static final int MODE_DEFAULT = 0;
 
     /** Indicates compatibility with how JSTL looks up messages */

@@ -38,6 +38,11 @@ public class DefaultModuleConfigFactory extends ModuleConfigFactory
     // --------------------------------------------------------- Public Methods
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1227835615838585786L;
+
+	/**
      * <p>Create and return a newly instansiated {@link ModuleConfig}. This
      * method must be implemented by concrete subclasses.</p>
      *

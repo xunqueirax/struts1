@@ -43,6 +43,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELGetAttributeTag extends GetAttributeTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2829366632304365542L;
+
+	/**
      * Instance variable mapped to "name" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

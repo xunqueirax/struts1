@@ -56,6 +56,10 @@ import org.apache.tiles.definition.util.DefinitionsFactoryUtil;
 public class RedeployableActionServlet extends ActionServlet {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3681534284719373420L;
+	/**
      * The request processor for Tiles definitions.
      */
     private TilesRequestProcessor tileProcessor;

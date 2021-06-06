@@ -35,6 +35,11 @@ import javax.servlet.jsp.tagext.Tag;
 public class ParamTag extends BodyTagSupport {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1366158296805914170L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

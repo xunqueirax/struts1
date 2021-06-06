@@ -33,6 +33,10 @@ public final class CustomFormBean extends FormBeanConfig {
 
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8581014865319104973L;
+	/**
      * An example String property.
      */
     private String example = "";

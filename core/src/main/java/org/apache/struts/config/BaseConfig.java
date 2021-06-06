@@ -33,6 +33,11 @@ import java.util.Properties;
  */
 public abstract class BaseConfig implements Serializable {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7059240587081363820L;
+
+	/**
      * Indicates if configuration of this component been completed. TODO
      * change protected to private and use methods provided by extenders?
      */

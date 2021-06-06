@@ -34,6 +34,11 @@ import org.apache.struts.tiles.NoSuchDefinitionException;
 public class XmlDefinition extends ComponentDefinition
 {
   /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3498824883016185787L;
+
+/**
    * Extends attribute value.
    */
   private String inherit;

@@ -36,6 +36,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELRewriteTag extends RewriteTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6451466600661614093L;
+
+	/**
      * Instance variable mapped to "action" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

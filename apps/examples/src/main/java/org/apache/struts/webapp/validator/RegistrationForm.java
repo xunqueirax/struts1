@@ -33,7 +33,12 @@ import org.apache.struts.validator.ValidatorForm;
  *
 */
 public final class RegistrationForm extends ValidatorForm implements Serializable {
-    private String action = null;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3679135634630477325L;
+
+	private String action = null;
 
     private String sFirstName = null;
     private String sLastName = null;

@@ -46,6 +46,11 @@ import java.util.Map;
  */
 public class OptionsTag extends TagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -585632142361843380L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

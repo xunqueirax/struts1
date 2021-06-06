@@ -44,6 +44,11 @@ import java.util.Iterator;
  */
 public class MessagesTag extends BodyTagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7665117721919199746L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messageResources =

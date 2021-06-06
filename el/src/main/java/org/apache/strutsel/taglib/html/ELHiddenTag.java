@@ -36,6 +36,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELHiddenTag extends HiddenTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3558734926376900105L;
+
+	/**
      * Instance variable mapped to "accesskey" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

@@ -59,6 +59,11 @@ public class ActionRedirect extends ActionForward {
     // ----------------------------------------------------- Manifest constants
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3751872574084528837L;
+
+	/**
      * <p>Default allocation size for string buffers.</p>
      */
     private static final int DEFAULT_BUFFER_SIZE = 256;

@@ -36,6 +36,11 @@ public class GetTag extends InsertTag {
 
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8110886541599103180L;
+
+	/**
      * Constructor.
      * Set default value for 'isErrorIgnored' to <code>true</code>.
      */

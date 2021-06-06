@@ -43,7 +43,11 @@ import org.apache.struts.tiles.NoSuchDefinitionException;
 public abstract class FactorySet implements ComponentDefinitionsFactory
 {
 
-    /** Loaded factories */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3005016733922480701L;
+	/** Loaded factories */
   protected Map factories=null;
 
   /**

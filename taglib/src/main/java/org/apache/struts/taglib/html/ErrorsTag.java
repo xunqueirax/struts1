@@ -61,6 +61,11 @@ import java.util.Iterator;
  */
 public class ErrorsTag extends TagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1001104694221127422L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

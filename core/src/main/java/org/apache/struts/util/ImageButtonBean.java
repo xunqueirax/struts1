@@ -37,6 +37,11 @@ public class ImageButtonBean implements Serializable {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2728467216883854129L;
+
+	/**
      * The X coordinate of the button press.
      */
     private String x;

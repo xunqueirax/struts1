@@ -40,6 +40,11 @@ import org.apache.commons.beanutils.BeanUtils;
 public class DefinitionsFactoryConfig implements Serializable {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2587987079011748643L;
+
+	/**
      * Fully qualified classname of the factory to create.
      * If no classname is set, a default factory is created
      * (of class "org.apache.struts.tiles.xmlDefinition.I18nFactorySet").

@@ -46,6 +46,11 @@ import java.util.Properties;
  */
 public class ActionConfigMatcher implements Serializable {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6113399731187154520L;
+
+	/**
      * <p> The logging instance </p>
      */
     private static final Log log = LogFactory.getLog(ActionConfigMatcher.class);
@@ -295,6 +300,11 @@ public class ActionConfigMatcher implements Serializable {
      */
     private class Mapping implements Serializable {
         /**
+		 * 
+		 */
+		private static final long serialVersionUID = -4524356639556048603L;
+
+		/**
          * <p> The compiled pattern. </p>
          */
         private int[] pattern;

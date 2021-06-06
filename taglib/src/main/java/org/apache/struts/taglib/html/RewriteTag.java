@@ -39,6 +39,11 @@ public class RewriteTag extends LinkTag {
     // --------------------------------------------------------- Public Methods
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 631087586001555798L;
+
+	/**
      * Render the URI.
      *
      * @throws JspException if a JSP exception has occurred

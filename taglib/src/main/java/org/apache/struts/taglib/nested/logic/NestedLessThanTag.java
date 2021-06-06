@@ -35,7 +35,11 @@ import javax.servlet.jsp.JspException;
  * @since Struts 1.1
  */
 public class NestedLessThanTag extends LessThanTag implements NestedNameSupport {
-    /* the usual private member variables */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1780169007325153713L;
+	/* the usual private member variables */
     private String originalName = null;
     private String originalProperty = null;
 

@@ -34,6 +34,11 @@ public class ForwardConfig extends BaseConfig {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3983809829201419914L;
+
+	/**
      * The name of the ForwardConfig that this object should inherit
      * properties from.
      */

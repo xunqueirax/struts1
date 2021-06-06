@@ -37,7 +37,12 @@ public class SimpleActionForm extends ActionForm {
 
     // ------------------------------------------------------ Instance Variables
 
-    /** Name */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4189849944389346127L;
+
+	/** Name */
     private String name = null;
 
     /** Secret */

@@ -40,6 +40,11 @@ public class NestedFormTag extends FormTag implements NestedNameSupport {
     //      from here altogether.
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6573069373335339702L;
+
+	/**
      * The name
      */
     protected String name = null;

@@ -34,6 +34,11 @@ public class ControllerConfig extends BaseConfig {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7704474362520651283L;
+
+	/**
      * <p> The input buffer size for file uploads. </p>
      */
     protected int bufferSize = 4096;

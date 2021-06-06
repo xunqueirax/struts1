@@ -40,6 +40,11 @@ public  final  class  AttributeToScopeTag  extends  TagSupport  {
 
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1499789323573667416L;
+
+	/**
      * The scope name.
      */
     private String scopeName = null;

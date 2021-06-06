@@ -38,6 +38,11 @@ public class PutListTag
     implements ComponentConstants, AddTagParent, PutListTagParent {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3883044506251009353L;
+
+	/**
      * Name of this attribute.
      */
     private String attributeName = null;

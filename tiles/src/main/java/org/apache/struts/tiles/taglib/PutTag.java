@@ -68,6 +68,11 @@ public class PutTag extends BodyTagSupport implements ComponentConstants {
     /* JSP Tag attributes */
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -235334177334574729L;
+
+	/**
      * Name of attribute to put in component context.
      */
     protected String attributeName = null;

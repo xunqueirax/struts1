@@ -37,6 +37,10 @@ import java.io.Serializable;
  */
 public class ActionServletWrapper implements Serializable {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3775546877948572436L;
+	/**
      * <p>The servlet instance to which we are attached.</p>
      */
     protected transient ActionServlet servlet = null;

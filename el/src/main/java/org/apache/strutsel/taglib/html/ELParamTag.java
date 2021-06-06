@@ -36,6 +36,11 @@ import javax.servlet.jsp.JspException;
 public class ELParamTag extends ParamTag {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4197541198264717739L;
+
+	/**
      * Instance variable mapped to "name" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

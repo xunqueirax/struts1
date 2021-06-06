@@ -38,6 +38,11 @@ import javax.servlet.jsp.tagext.BodyTagSupport;
  */
 public class DefineTag extends BodyTagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1913737863789666444L;
+
+	/**
      * Commons logging instance.
      */
     private static final Log log = LogFactory.getLog(DefineTag.class);

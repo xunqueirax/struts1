@@ -34,7 +34,12 @@ public class LabelTag extends BaseInputTag {
 
     // ----------------------------------------------------- Instance Variables
 
-    protected String forId = null;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4783688183017577922L;
+
+	protected String forId = null;
 
     protected String key = null;
 

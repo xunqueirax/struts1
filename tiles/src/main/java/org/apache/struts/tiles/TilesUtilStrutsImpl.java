@@ -34,6 +34,11 @@ import org.apache.struts.config.ModuleConfig;
 public class TilesUtilStrutsImpl extends TilesUtilImpl {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6361461121282446038L;
+
+	/**
      * Get definition factory for the module attached to the specified moduleConfig.
      * @param servletContext Current servlet context
      * @param moduleConfig Module config of the module for which the factory is requested.

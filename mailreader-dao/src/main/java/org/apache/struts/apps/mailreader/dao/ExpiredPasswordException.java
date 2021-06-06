@@ -33,6 +33,11 @@ public class ExpiredPasswordException extends Exception {
 
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3244418598208385319L;
+
+	/**
      * Construct a new instance of this exception for the specified username.
      *
      * @param username Username whose password has expired

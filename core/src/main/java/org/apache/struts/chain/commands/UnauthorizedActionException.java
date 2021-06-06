@@ -30,6 +30,11 @@ package org.apache.struts.chain.commands;
  */
 public class UnauthorizedActionException extends Exception {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8100433181299584507L;
+
+	/**
      * <p> Default no-argument constructor. </p>
      */
     public UnauthorizedActionException() {

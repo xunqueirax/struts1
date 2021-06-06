@@ -38,6 +38,11 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class SelectTag extends BaseHandlerTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -48324910116851733L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

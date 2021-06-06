@@ -62,6 +62,11 @@ public abstract class ActionForm implements Serializable {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7986260744524429895L;
+
+	/**
      * <p>The servlet instance to which we are attached.</p>
      */
     protected transient ActionServlet servlet = null;

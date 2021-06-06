@@ -34,6 +34,11 @@ import org.apache.struts.tiles.xmlDefinition.I18nFactorySet;
 public class CustomI18nFactorySet extends I18nFactorySet {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5068476450131483964L;
+
+	/**
      * Constructor.
      * Init the factory by reading appropriate configuration file.
      * @param servletContext Servlet context.

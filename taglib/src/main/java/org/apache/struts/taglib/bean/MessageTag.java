@@ -40,6 +40,11 @@ import java.util.Locale;
  */
 public class MessageTag extends TagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7079614664108381469L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

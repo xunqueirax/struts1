@@ -52,6 +52,11 @@ import java.util.StringTokenizer;
  */
 public class FieldChecks implements Serializable {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6466045187316462715L;
+
+	/**
      * Commons Logging instance.
      */
     private static final Log log = LogFactory.getLog(FieldChecks.class);

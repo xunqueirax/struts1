@@ -1027,7 +1027,11 @@ public class TestActionServlet extends TestCase {
      * Used for testing custom FormBeanConfig classes.
      */
     public static class CustomFormBeanConfig extends FormBeanConfig {
-        public boolean processExtendsCalled = false;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -573022017310455853L;
+		public boolean processExtendsCalled = false;
 
         public CustomFormBeanConfig() {
             super();
@@ -1048,7 +1052,12 @@ public class TestActionServlet extends TestCase {
      * constructor.
      */
     private class CustomFormBeanConfigArg extends FormBeanConfig {
-        CustomFormBeanConfigArg(String name) {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -455258948780624575L;
+
+		CustomFormBeanConfigArg(String name) {
             super();
             setName(name);
         }
@@ -1058,7 +1067,11 @@ public class TestActionServlet extends TestCase {
      * Used for testing custom ExceptionConfig classes.
      */
     public static class CustomExceptionConfig extends ExceptionConfig {
-        public boolean processExtendsCalled = false;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 3648200258159769023L;
+		public boolean processExtendsCalled = false;
 
         public CustomExceptionConfig() {
             super();
@@ -1080,7 +1093,12 @@ public class TestActionServlet extends TestCase {
      * constructor.
      */
     private class CustomExceptionConfigArg extends ExceptionConfig {
-        CustomExceptionConfigArg(String type) {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 4453990369781006902L;
+
+		CustomExceptionConfigArg(String type) {
             super();
             setType(type);
         }
@@ -1090,7 +1108,11 @@ public class TestActionServlet extends TestCase {
      * Used for testing custom ForwardConfig classes.
      */
     public static class CustomForwardConfig extends ForwardConfig {
-        public boolean processExtendsCalled = false;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -993693513159522038L;
+		public boolean processExtendsCalled = false;
 
         public CustomForwardConfig() {
             super();
@@ -1116,7 +1138,12 @@ public class TestActionServlet extends TestCase {
      * constructor.
      */
     private class CustomForwardConfigArg extends ForwardConfig {
-        CustomForwardConfigArg(String name, String path) {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -2880188065203315383L;
+
+		CustomForwardConfigArg(String name, String path) {
             super();
             setName(name);
             setPath(path);
@@ -1127,7 +1154,11 @@ public class TestActionServlet extends TestCase {
      * Used for testing custom ActionConfig classes.
      */
     public static class CustomActionConfig extends ActionConfig {
-        public boolean processExtendsCalled = false;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -7093772452618953476L;
+		public boolean processExtendsCalled = false;
 
         public CustomActionConfig() {
             super();
@@ -1153,7 +1184,12 @@ public class TestActionServlet extends TestCase {
      * constructor.
      */
     private class CustomActionConfigArg extends ActionConfig {
-        CustomActionConfigArg(String path) {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -2205204932709330848L;
+
+		CustomActionConfigArg(String path) {
             super();
             setPath(path);
         }

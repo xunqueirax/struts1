@@ -48,7 +48,12 @@ import java.util.HashMap;
  * @since Struts 1.1
  */
 public class FormBeanConfig extends BaseConfig {
-    private static final Log log = LogFactory.getLog(FormBeanConfig.class);
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3515968502450681140L;
+
+	private static final Log log = LogFactory.getLog(FormBeanConfig.class);
 
     // ----------------------------------------------------- Instance Variables
 

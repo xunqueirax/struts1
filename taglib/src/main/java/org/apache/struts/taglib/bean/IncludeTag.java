@@ -53,6 +53,11 @@ public class IncludeTag extends TagSupport {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7506510616296363473L;
+
+	/**
      * Buffer size to use when reading the input stream.
      */
     protected static final int BUFFER_SIZE = 256;

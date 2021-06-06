@@ -37,6 +37,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELMatchTag extends MatchTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4622998898557497563L;
+
+	/**
      * Instance variable mapped to "cookie" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

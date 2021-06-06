@@ -38,6 +38,11 @@ import org.apache.struts.util.RequestUtils;
 public class ComponentDefinition implements Serializable {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2272946761382428217L;
+
+	/**
      * Commons Logging instance.
      */
     protected static Log log = LogFactory.getLog(ComponentDefinition.class);

@@ -41,6 +41,11 @@ import java.util.Iterator;
 public class MessagesPresentTag extends ConditionalTagBase {
 
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4848602425179872796L;
+
+	/**
      * If this is set to 'true', then the <code>Globals.MESSAGE_KEY</code>
      * will be used to retrieve the messages from scope.
      */

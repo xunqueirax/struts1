@@ -43,6 +43,11 @@ import org.apache.struts.util.RequestUtils;
 public class ComponentDefinitionsFactoryWrapper implements DefinitionsFactory {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1996134499246652941L;
+
+	/**
      * The underlying factory.
      */
     private ComponentDefinitionsFactory factory = null;

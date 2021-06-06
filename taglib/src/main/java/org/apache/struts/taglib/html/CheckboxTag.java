@@ -35,6 +35,11 @@ public class CheckboxTag extends BaseHandlerTag {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2300329410278177186L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

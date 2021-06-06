@@ -47,6 +47,11 @@ import java.lang.reflect.Method;
  */
 public abstract class BaseHandlerTag extends BodyTagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2120829773020021751L;
+
+	/**
      * Commons Logging instance.
      */
     private static Log log = LogFactory.getLog(BaseHandlerTag.class);

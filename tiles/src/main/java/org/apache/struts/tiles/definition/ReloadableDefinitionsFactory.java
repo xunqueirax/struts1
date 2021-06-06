@@ -49,6 +49,11 @@ import org.apache.struts.util.RequestUtils;
 public class ReloadableDefinitionsFactory implements ComponentDefinitionsFactory {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1432127365659932325L;
+
+	/**
      * The real factory instance.
      */
     protected ComponentDefinitionsFactory factory = null;
@@ -267,6 +272,11 @@ public class ReloadableDefinitionsFactory implements ComponentDefinitionsFactory
      */
     class ServletPropertiesMap extends HashMap {
         /**
+		 * 
+		 */
+		private static final long serialVersionUID = -1834721489197689992L;
+
+		/**
          * Constructor.
          */
         ServletPropertiesMap(ServletConfig config) {

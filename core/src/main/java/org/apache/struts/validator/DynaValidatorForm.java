@@ -58,6 +58,11 @@ import java.util.Map;
 public class DynaValidatorForm extends DynaActionForm implements DynaBean,
     Serializable {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8296689613326613142L;
+
+	/**
      * Commons Logging instance.
      */
     private static Log log = LogFactory.getLog(DynaValidatorForm.class);

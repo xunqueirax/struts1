@@ -31,6 +31,12 @@ public class TilesException extends Exception
 
 
   /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2512402467536260269L;
+
+
+/**
     * Constructor.
     */
   public TilesException()

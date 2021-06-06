@@ -362,7 +362,11 @@ public class TestActionConfig extends TestCase {
      * Used to detect that ActionConfig is making the right calls.
      */
     public static class CustomActionConfig extends ActionConfig {
-        boolean processExtendsCalled = false;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 4345195201607298134L;
+		boolean processExtendsCalled = false;
 
         public void processExtends(ModuleConfig moduleConfig)
             throws ClassNotFoundException, IllegalAccessException,

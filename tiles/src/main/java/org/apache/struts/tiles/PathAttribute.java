@@ -27,7 +27,12 @@ package org.apache.struts.tiles;
  */
 public class PathAttribute extends UntypedAttribute {
 
-    public PathAttribute(String value) {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1006194795181107127L;
+
+	public PathAttribute(String value) {
         super(value);
     }
 

@@ -36,6 +36,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELCheckboxTag extends CheckboxTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -260394329816119806L;
+
+	/**
      * Instance variable mapped to "accesskey" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

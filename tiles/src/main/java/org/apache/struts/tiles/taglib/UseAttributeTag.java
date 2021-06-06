@@ -40,6 +40,12 @@ public class UseAttributeTag extends TagSupport {
 
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6568135554030718942L;
+
+
+	/**
      * Class name of object.
      */
     private String  classname = null;

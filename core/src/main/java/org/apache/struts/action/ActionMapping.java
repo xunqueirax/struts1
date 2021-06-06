@@ -49,6 +49,10 @@ import java.util.ArrayList;
  */
 public class ActionMapping extends ActionConfig {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5152639565031916976L;
+	/**
      * <p>Commons Logging instance.</p>
      *
      * @since Struts 1.2.8

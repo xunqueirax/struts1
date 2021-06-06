@@ -39,6 +39,11 @@ import java.util.ArrayList;
  */
 public class CookieTag extends TagSupport {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8294387396934425648L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

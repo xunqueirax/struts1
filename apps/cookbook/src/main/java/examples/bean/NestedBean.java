@@ -33,7 +33,11 @@ public class NestedBean implements Serializable {
 
     // ------------------------------------------------------ Instance Variables
 
-    /** A string value */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3815357718640563128L;
+	/** A string value */
     private String stringValue = "This is a string from NestedBean";
 
     // ------------------------------------------------------------ Constructors

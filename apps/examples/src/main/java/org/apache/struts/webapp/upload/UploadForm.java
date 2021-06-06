@@ -43,6 +43,11 @@ import org.apache.struts.upload.MultipartRequestHandler;
 public class UploadForm extends ValidatorForm {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 9109939239360280904L;
+
+	/**
      * The value of the text the user has sent as form data
      */
     protected String theText;

@@ -38,6 +38,10 @@ public final class CustomActionForm extends ActionForm {
 
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4725966970767399920L;
+	/**
      * An example String property.
      */
     private String example = "";

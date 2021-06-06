@@ -41,6 +41,11 @@ public class ForwardTag extends TagSupport {
     // ----------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6945897858520054480L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

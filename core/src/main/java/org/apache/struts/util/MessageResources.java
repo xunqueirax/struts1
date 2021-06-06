@@ -52,6 +52,11 @@ public abstract class MessageResources implements Serializable {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3823833250965010653L;
+
+	/**
      * Commons Logging instance.
      */
     protected static Log log = LogFactory.getLog(MessageResources.class);

@@ -58,6 +58,11 @@ import java.util.TreeMap;
 public class ModuleConfigImpl extends BaseConfig implements Serializable,
     ModuleConfig {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -828038539996220003L;
+
+	/**
      * <p>Commons Logging instance. </p>
      */
     protected static Log log = LogFactory.getLog(ModuleConfigImpl.class);

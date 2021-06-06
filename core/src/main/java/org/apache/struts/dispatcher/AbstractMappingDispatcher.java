@@ -34,7 +34,11 @@ import org.apache.struts.chain.contexts.ActionContext;
  */
 public abstract class AbstractMappingDispatcher extends AbstractDispatcher {
 
-    private String defaultMappingParameter;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1956815632606733563L;
+	private String defaultMappingParameter;
 
     /**
      * Constructs a new dispatcher with the specified method resolver.

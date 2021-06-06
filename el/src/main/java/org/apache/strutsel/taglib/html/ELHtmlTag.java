@@ -37,6 +37,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELHtmlTag extends HtmlTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1402498158730347290L;
+
+	/**
      * Instance variable mapped to "lang" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

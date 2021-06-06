@@ -49,6 +49,11 @@ import java.util.List;
  */
 public class ActionMessages implements Serializable {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4363118850236216381L;
+
+	/**
      * <p>Compares ActionMessageItem objects.</p>
      */
     private static final Comparator ACTION_ITEM_COMPARATOR =
@@ -345,6 +350,11 @@ public class ActionMessages implements Serializable {
      */
     protected class ActionMessageItem implements Serializable {
         /**
+		 * 
+		 */
+		private static final long serialVersionUID = 6569527708054508739L;
+
+		/**
          * <p>The list of <code>ActionMessage</code>s.</p>
          */
         protected List list = null;

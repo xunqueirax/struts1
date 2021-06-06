@@ -56,6 +56,11 @@ import java.util.Map;
  */
 public class ValidatorForm extends ActionForm implements Serializable {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1746256002332063637L;
+
+	/**
      * Commons Logging instance.
      */
     private static Log log = LogFactory.getLog(ValidatorForm.class);

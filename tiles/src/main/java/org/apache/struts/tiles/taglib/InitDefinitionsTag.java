@@ -37,7 +37,11 @@ public class InitDefinitionsTag extends TagSupport
     implements ComponentConstants {
 
 
-  private String filename = null;
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1471051490484770266L;
+private String filename = null;
   private String classname = null;
 
   /**

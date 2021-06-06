@@ -35,6 +35,11 @@ public class SubmitTag extends BaseHandlerTag {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2450065490909394950L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

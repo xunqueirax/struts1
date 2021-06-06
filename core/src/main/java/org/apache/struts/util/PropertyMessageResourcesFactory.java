@@ -32,6 +32,11 @@ public class PropertyMessageResourcesFactory extends MessageResourcesFactory {
     // --------------------------------------------------------- Public Methods
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5604114512308758549L;
+
+	/**
      * Create and return a newly instansiated <code>MessageResources</code>.
      * This method must be implemented by concrete subclasses.
      *

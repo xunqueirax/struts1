@@ -41,6 +41,11 @@ public class ResourceTag extends TagSupport {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2393578665475166929L;
+
+	/**
      * Buffer size to use when reading the input stream.
      */
     protected static final int BUFFER_SIZE = 256;

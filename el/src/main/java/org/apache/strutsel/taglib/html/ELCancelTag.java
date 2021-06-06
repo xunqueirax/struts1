@@ -36,6 +36,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELCancelTag extends CancelTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1531834515002564743L;
+
+	/**
      * Instance variable mapped to "accesskey" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

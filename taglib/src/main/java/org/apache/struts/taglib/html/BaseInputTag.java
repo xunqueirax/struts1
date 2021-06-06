@@ -32,6 +32,11 @@ import javax.servlet.jsp.JspException;
  */
 public abstract class BaseInputTag extends BaseHandlerTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2006750476388177591L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =

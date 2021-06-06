@@ -37,6 +37,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELAddTag extends AddTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2786970471246366049L;
+
+	/**
      * Instance variable mapped to "value" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

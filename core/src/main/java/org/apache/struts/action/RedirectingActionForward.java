@@ -32,6 +32,11 @@ public class RedirectingActionForward extends ActionForward {
     // ----------------------------------------------------------- Constructors
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2232598730866637791L;
+
+	/**
      * <p>Construct a new instance with default values.</p>
      */
     public RedirectingActionForward() {

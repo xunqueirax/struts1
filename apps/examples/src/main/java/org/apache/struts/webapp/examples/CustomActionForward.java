@@ -38,6 +38,10 @@ public final class CustomActionForward extends ActionForward {
 
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2271471938424287918L;
+	/**
      * An example String property.
      */
     private String example = "";

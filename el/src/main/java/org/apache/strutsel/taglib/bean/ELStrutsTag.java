@@ -37,6 +37,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELStrutsTag extends StrutsTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8196092383948686405L;
+
+	/**
      * Instance variable mapped to "id" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

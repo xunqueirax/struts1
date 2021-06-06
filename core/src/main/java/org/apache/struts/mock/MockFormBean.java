@@ -32,7 +32,11 @@ import java.util.Map;
  *          $
  */
 public class MockFormBean extends ActionForm {
-    /*
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8677959176030940512L;
+	/*
      * <p>
      * Flag to indicate whether certain methods should complete properly
      * or throw an Exception

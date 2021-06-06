@@ -35,7 +35,11 @@ import javax.servlet.jsp.JspException;
  * @since Struts 1.1
  */
 public class NestedNotEqualTag extends NotEqualTag implements NestedNameSupport {
-    /* the usual private member variables */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7060665845722038929L;
+	/* the usual private member variables */
     private String originalName = null;
     private String originalProperty = null;
 

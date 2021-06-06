@@ -34,7 +34,12 @@ public class ExampleBean implements Serializable {
 
     // ------------------------------------------------------ Instance Variables
 
-    /** A boolean value */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7847631250942658121L;
+
+	/** A boolean value */
     private boolean booleanValue = false;
 
     /** A double value */

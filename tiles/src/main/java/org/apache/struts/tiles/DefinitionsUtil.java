@@ -290,6 +290,11 @@ public class DefinitionsUtil extends TilesUtil implements ComponentConstants {
      */
     static class ServletPropertiesMap extends HashMap {
         /**
+		 * 
+		 */
+		private static final long serialVersionUID = -290349932602484285L;
+
+		/**
          * Constructor.
          */
         ServletPropertiesMap(ServletConfig config) {

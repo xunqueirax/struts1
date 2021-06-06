@@ -38,6 +38,10 @@ public final class CustomActionMapping extends ActionMapping {
 
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2591186360691662907L;
+	/**
      * An example String property.
      */
     private String example = "";

@@ -36,7 +36,12 @@ public class MultiboxActionForm extends ActionForm {
 
     // ------------------------------------------------------ Instance Variables
 
-    /** Fruits */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7784260148584459143L;
+
+	/** Fruits */
     private String[] fruits = {};
 
     /** Colors */

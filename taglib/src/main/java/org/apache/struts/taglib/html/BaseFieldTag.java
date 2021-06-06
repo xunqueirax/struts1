@@ -34,6 +34,11 @@ public abstract class BaseFieldTag extends BaseInputTag {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6316491607452965571L;
+
+	/**
      * Comma-delimited list of content types that a server processing this
      * form will handle correctly.  This property is defined only for the
      * <code>file</code> tag, but is implemented here because it affects the

@@ -30,7 +30,11 @@ import java.io.Serializable;
  * @since Struts 1.1
  */
 public class NestedReference implements Serializable {
-    /* Usual member variables */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1662171681729573788L;
+	/* Usual member variables */
     private String beanName;
     private String property;
 

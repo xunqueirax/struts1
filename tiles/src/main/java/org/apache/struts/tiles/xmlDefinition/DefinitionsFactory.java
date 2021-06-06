@@ -39,7 +39,11 @@ import org.apache.struts.tiles.NoSuchDefinitionException;
  */
 public class DefinitionsFactory implements Serializable
 {
-     /** Underlying map containing all definitions.*/
+     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1606414944612676291L;
+	/** Underlying map containing all definitions.*/
    protected Map definitions;
 
    /**

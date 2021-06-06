@@ -38,7 +38,11 @@ import org.apache.struts.tiles.ComponentContext;
    */
 public class GetAttributeTag extends TagSupport implements ComponentConstants {
 
-  private String attribute = null;
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6301259591967456357L;
+private String attribute = null;
     /** Role attribute */
   private String role = null;
     /**

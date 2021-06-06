@@ -37,6 +37,11 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class FormPropertyConfig extends BaseConfig {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4120657988013574721L;
+
+	/**
      * The logging instance
      */
     private static final Log log = LogFactory.getLog(FormPropertyConfig.class);

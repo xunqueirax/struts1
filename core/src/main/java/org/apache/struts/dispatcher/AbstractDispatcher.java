@@ -42,7 +42,11 @@ import org.apache.commons.logging.LogFactory;
  */
 public abstract class AbstractDispatcher implements Dispatcher, Serializable {
 
-    // Package message bundle keys
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2259767062109056338L;
+	// Package message bundle keys
     static final String LOCAL_STRINGS = "org.apache.struts.dispatcher.LocalStrings";
     static final String MSG_KEY_DISPATCH_ERROR = "dispatcher.error";
     static final String MSG_KEY_MISSING_METHOD = "dispatcher.missingMethod";

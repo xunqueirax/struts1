@@ -49,6 +49,11 @@ import org.apache.struts.util.ModuleUtils;
 public class TilesUtilStrutsModulesImpl extends TilesUtilStrutsImpl {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2840296621378046205L;
+
+	/**
      * Do a forward using request dispatcher.
      *
      * This method is used by the Tiles package anytime a forward is required.

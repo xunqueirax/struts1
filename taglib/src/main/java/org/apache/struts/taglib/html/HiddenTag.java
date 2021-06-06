@@ -34,6 +34,10 @@ public class HiddenTag extends BaseFieldTag {
     // ------------------------------------------------------------- Properties
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5086653576189221269L;
+	/**
      * Should the value of this field also be rendered to the response?
      */
     protected boolean write = false;

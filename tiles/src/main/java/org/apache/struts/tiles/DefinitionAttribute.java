@@ -27,7 +27,12 @@ package org.apache.struts.tiles;
  */
 public class DefinitionAttribute extends UntypedAttribute {
 
-    public DefinitionAttribute(String value) {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 952533982963272876L;
+
+	public DefinitionAttribute(String value) {
         super(value);
     }
 

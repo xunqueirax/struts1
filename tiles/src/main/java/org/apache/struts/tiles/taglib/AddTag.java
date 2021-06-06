@@ -31,6 +31,11 @@ import javax.servlet.jsp.JspException;
 public class AddTag extends PutTag {
 
   /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8081198639386273712L;
+
+/**
    * default constructor
    */
   public AddTag() {

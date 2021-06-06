@@ -43,6 +43,11 @@ public class PlugInConfig implements Serializable {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7818510438622269230L;
+
+	/**
      * Has this component been completely configured?
      */
     protected boolean configured = false;

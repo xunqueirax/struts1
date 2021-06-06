@@ -52,7 +52,11 @@ import org.apache.struts.config.ModuleConfig;
  * @since 1.2.1
  */
 public class RedeployableActionServlet extends ActionServlet {
-    private TilesRequestProcessor tileProcessor;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3277829251603784258L;
+	private TilesRequestProcessor tileProcessor;
 
     protected synchronized RequestProcessor
             getRequestProcessor(ModuleConfig config) throws ServletException {

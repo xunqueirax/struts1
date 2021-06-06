@@ -37,6 +37,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELFormTag extends FormTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -982409871001608488L;
+
+	/**
      * Instance variable mapped to "action" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

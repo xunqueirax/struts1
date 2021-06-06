@@ -37,6 +37,11 @@ import javax.servlet.jsp.JspException;
  */
 public class ELResourceTag extends ResourceTag {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7889578706037504110L;
+
+	/**
      * Instance variable mapped to "id" tag attribute. (Mapping set in
      * associated BeanInfo class.)
      */

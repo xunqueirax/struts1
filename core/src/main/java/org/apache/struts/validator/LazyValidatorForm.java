@@ -126,6 +126,11 @@ public class LazyValidatorForm extends BeanValidatorForm {
     // ------------------- Constructors ----------------------------------
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6206516954531621997L;
+
+	/**
      * Default Constructor which creates a <code>LazyDynaBean</code> to
      * <i>back</i> this form.
      */

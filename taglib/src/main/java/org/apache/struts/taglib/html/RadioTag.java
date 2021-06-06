@@ -35,6 +35,11 @@ public class RadioTag extends BaseHandlerTag {
     // ----------------------------------------------------- Instance Variables
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1648444449466462193L;
+
+	/**
      * The message resources for this package.
      */
     protected static MessageResources messages =
