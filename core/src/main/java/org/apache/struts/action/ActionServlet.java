@@ -23,6 +23,7 @@ package org.apache.struts.action;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.PropertyUtils;
+import org.apache.commons.beanutils.SuppressPropertiesBeanIntrospector;
 import org.apache.commons.beanutils.converters.BigDecimalConverter;
 import org.apache.commons.beanutils.converters.BigIntegerConverter;
 import org.apache.commons.beanutils.converters.BooleanConverter;
@@ -73,7 +74,9 @@ import java.math.BigInteger;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Enumeration;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.MissingResourceException;
@@ -1757,9 +1760,10 @@ public class ActionServlet extends HttpServlet {
      */
     protected void initOther()
         throws ServletException {
-        String value;
-
-        value = getServletConfig().getInitParameter("config");
+    	
+        initPropertyUtils();
+        
+        String value = getServletConfig().getInitParameter("config");
 
         if (value != null) {
             config = value;
@@ -1791,6 +1795,17 @@ public class ActionServlet extends HttpServlet {
             ConvertUtils.register(new ShortConverter(null), Short.class);
         }
     }
+
+	private void initPropertyUtils() {
+		//Fixed CVE-2016-1181 and CVE-2016-1182 from kawasima's struts1-forever
+        Collection<String> suppressProperties = new HashSet<>();
+        suppressProperties.add("class");
+        suppressProperties.add("multipartRequestHandler");
+        suppressProperties.add("resultValueMap");
+
+        PropertyUtils.addBeanIntrospector(new SuppressPropertiesBeanIntrospector(suppressProperties));
+        PropertyUtils.clearDescriptors();
+	}
 
     /**
      * <p>Initialize the servlet mapping under which our controller servlet is
