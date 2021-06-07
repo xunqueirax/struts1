@@ -267,10 +267,8 @@ public abstract class BaseHandlerTag extends BodyTagSupport {
      * The message resources key of the advisory title.
      */
     private String titleKey = null;
-    private Class loopTagClass = null;
-    private Method loopTagGetStatus = null;
-    private Class loopTagStatusClass = null;
-    private Method loopTagStatusGetIndex = null;
+    private Class<?> loopTagClass = null;
+    private Class<?> loopTagStatusClass = null;
     private boolean triedJstlInit = false;
     private boolean triedJstlSuccess = false;
 
@@ -855,43 +853,24 @@ public abstract class BaseHandlerTag extends BodyTagSupport {
     }
 
     private Integer getJstlLoopIndex() {
-        if (!triedJstlInit) {
-            triedJstlInit = true;
-
-            try {
-                loopTagClass =
-                    RequestUtils.applicationClass(
-                        "javax.servlet.jsp.jstl.core.LoopTag");
-
-                loopTagGetStatus =
-                    loopTagClass.getDeclaredMethod("getLoopStatus", null);
-
-                loopTagStatusClass =
-                    RequestUtils.applicationClass(
-                        "javax.servlet.jsp.jstl.core.LoopTagStatus");
-
-                loopTagStatusGetIndex =
-                    loopTagStatusClass.getDeclaredMethod("getIndex", null);
-
-                triedJstlSuccess = true;
-            } catch (ClassNotFoundException ex) {
-                // These just mean that JSTL isn't loaded, so ignore
-            } catch (NoSuchMethodException ex) {
-            }
-        }
+        
+        if (!triedJstlInit)
+            initJstl();
 
         if (triedJstlSuccess) {
             try {
-                Object loopTag =
-                    findAncestorWithClass(this, loopTagClass);
+                // Moved to local variables because methods are not serializable;
+                Method loopTagGetStatus = loopTagClass.getDeclaredMethod("getLoopStatus", null);
+                Method loopTagStatusGetIndex = loopTagStatusClass.getDeclaredMethod("getIndex", null);
 
-                if (loopTag == null) {
+                Object loopTag = findAncestorWithClass(this, loopTagClass);
+
+                if (loopTag == null)
                     return null;
-                }
 
                 Object status = loopTagGetStatus.invoke(loopTag, null);
-
                 return (Integer) loopTagStatusGetIndex.invoke(status, null);
+
             } catch (IllegalAccessException ex) {
                 log.error(ex.getMessage(), ex);
             } catch (IllegalArgumentException ex) {
@@ -902,11 +881,24 @@ public abstract class BaseHandlerTag extends BodyTagSupport {
                 log.error(ex.getMessage(), ex);
             } catch (ExceptionInInitializerError ex) {
                 log.error(ex.getMessage(), ex);
+            } catch (NoSuchMethodException | SecurityException ex) {
+                log.error(ex.getMessage(), ex);
             }
         }
 
         return null;
     }
+
+	private void initJstl() {
+		triedJstlInit = true;
+		try {
+			loopTagClass = RequestUtils.applicationClass("javax.servlet.jsp.jstl.core.LoopTag");
+			loopTagStatusClass = RequestUtils.applicationClass("javax.servlet.jsp.jstl.core.LoopTagStatus");
+			triedJstlSuccess = true;
+		} catch (ClassNotFoundException ex) {
+			// These just mean that JSTL isn't loaded, so ignore
+		}
+	}
 
     /**
      * Appends bean name with index in brackets for tags with 'true' value in
