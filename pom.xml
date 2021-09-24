@@ -341,7 +341,7 @@
     </reporting>
     
     <properties>
-        <myfaces.version>1.1.1</myfaces.version>
+        <myfaces.version>1.1.10</myfaces.version>
         <struts.osgi.symbolicName>org.apache.${project.artifactId}</struts.osgi.symbolicName>
         <struts.osgi.export>org.apache.struts.*;version=${project.version}</struts.osgi.export>
         <struts.osgi.import>*</struts.osgi.import>
@@ -448,18 +448,13 @@
                 <optional>true</optional>
             </dependency>
             <dependency>
-               <groupId>myfaces</groupId>
-               <artifactId>myfaces-extensions</artifactId>
+               <groupId>org.apache.myfaces.core</groupId>
+               <artifactId>myfaces-api</artifactId>
                <version>${myfaces.version}</version>
             </dependency>
             <dependency>
-               <groupId>myfaces</groupId>
+               <groupId>org.apache.myfaces.core</groupId>
                <artifactId>myfaces-impl</artifactId>
-               <version>${myfaces.version}</version>
-            </dependency>
-            <dependency>
-               <groupId>myfaces</groupId>
-               <artifactId>myfaces-jsf-api</artifactId>
                <version>${myfaces.version}</version>
             </dependency>
             <dependency>
