@@ -65,8 +65,8 @@
          <artifactId>myfaces-api</artifactId>
       </dependency>
       <dependency>
-         <groupId>taglibs</groupId>
-         <artifactId>standard</artifactId>
+         <groupId>org.apache.taglibs</groupId>
+         <artifactId>taglibs-standard-jstlel</artifactId>
       </dependency>
       <!-- Required by MyFaces -->
       <dependency>
